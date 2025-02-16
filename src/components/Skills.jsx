@@ -8,6 +8,9 @@ const skills = [
 ];
 
 const Skills = () => {
+    const rows = [3, 2, 3, 2]; 
+    let startIndex = 0;
+
     return (
         <div className="relative flex flex-col items-center min-h-screen p-10 bg-black overflow-hidden">
             <motion.div 
@@ -31,24 +34,30 @@ const Skills = () => {
                 Languages:
             </motion.h1>
 
-            {[3, 2, 3, 2].map((count, rowIndex) => (
-                <div key={rowIndex} className={`grid grid-cols-${count} gap-20 mt-12 relative z-10`}>
-                    {skills.slice(rowIndex * count, rowIndex * count + count).map((skill, index) => (
-                        <motion.div
-                            key={index}
-                            className="bg-white px-8 py-4 shadow-lg rounded-lg text-center font-semibold"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, delay: index * 0.2 }}
-                            whileHover={{ scale: 1.1, rotate: 3 }}
-                        >
-                            {skill}
-                        </motion.div>
-                    ))}
-                </div>
-            ))}
+            {rows.map((count, rowIndex) => {
+                const rowSkills = skills.slice(startIndex, startIndex + count);
+                startIndex += count; // Update index for next row
+
+                return (
+                    <div key={rowIndex} className={`grid ${count === 3 ? "grid-cols-3" : "grid-cols-2"} gap-20 mt-12 relative z-10`}>
+                        {rowSkills.map((skill, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-white px-8 py-4 shadow-lg rounded-lg text-center font-semibold"
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6, delay: index * 0.2 }}
+                                whileHover={{ scale: 1.1, rotate: 3 }}
+                            >
+                                {skill}
+                            </motion.div>
+                        ))}
+                    </div>
+                );
+            })}
         </div>
     );
 };
 
 export default Skills;
+
