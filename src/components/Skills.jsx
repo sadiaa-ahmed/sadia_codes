@@ -12,7 +12,7 @@ const Skills = () => {
     let startIndex = 0;
 
     return (
-        <div className="relative flex flex-col items-center min-h-screen p-10 bg-black overflow-hidden">
+        <div className="relative flex flex-col items-center min-h-screen p-10 bg-gradient-to-b from-gray-900 to-black overflow-hidden">
             <motion.div 
                 className="absolute bottom-10 left-10 w-16 h-16 bg-blue-500 rounded-full opacity-20"
                 animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
@@ -36,7 +36,7 @@ const Skills = () => {
 
             {rows.map((count, rowIndex) => {
                 const rowSkills = skills.slice(startIndex, startIndex + count);
-                startIndex += count; // Update index for next row
+                startIndex += count; 
 
                 return (
                     <div key={rowIndex} className={`grid ${count === 3 ? "grid-cols-3" : "grid-cols-2"} gap-20 mt-12 relative z-10`}>
