@@ -56,7 +56,8 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                /> <motion.p
+                /> 
+                <motion.p
                 className="mt-10 text-xl font-bold text-gray-300 text-center max-w-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
