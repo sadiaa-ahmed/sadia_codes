@@ -12,7 +12,7 @@ const Skills = () => {
     let startIndex = 0;
 
     return (
-        <div className="relative flex flex-col items-center min-h-screen p-10 bg-gradient-to-b from-gray-900 to-black overflow-hidden">
+        <div className="relative flex flex-col items-center min-h-screen p-12  bg-gradient-to-b from-gray-900 to-black overflow-hidden">
             <motion.div 
                 className="absolute bottom-10 left-10 w-16 h-16 bg-blue-500 rounded-full opacity-20"
                 animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
@@ -39,11 +39,16 @@ const Skills = () => {
                 startIndex += count; 
 
                 return (
-                    <div key={rowIndex} className={`grid ${count === 3 ? "grid-cols-3" : "grid-cols-2"} gap-20 mt-12 relative z-10`}>
+                    <div 
+                        key={rowIndex} 
+                        className={`grid gap-6 sm:gap-20 mt-6 sm:mt-12 relative z-10 ${
+                            count === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-1 sm:grid-cols-2"
+                        }`}
+                    >
                         {rowSkills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white px-8 py-4 shadow-lg rounded-lg text-center font-semibold"
+                                className="bg-white px-14 py-3 sm:px-12 sm:py-4  shadow-lg rounded-lg text-center font-semibold text-sm sm:text-base"
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -60,4 +65,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
