@@ -28,7 +28,7 @@ const GetInTouch = () => {
                 <p className="text-gray-300 mb-6">I'm always open to discussing new opportunities or collaborations. Reach out through any of the platforms below:</p>
 
                 <div className="flex justify-center gap-6 text-3xl mt-6">
-                    <a href="www.linkedin.com/in/sadiaahmed14" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+                    <a href="https://www.linkedin.com/in/sadiaahmed14/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
                         <FaLinkedin />
                     </a>
                     <a href="https://github.com/sadiaahmed114" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
