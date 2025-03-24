@@ -31,7 +31,7 @@ const GetInTouch = () => {
                     <a href="https://www.linkedin.com/in/sadiaahmed14/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/sadiaahmed114" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+                    <a href="https://github.com/sadiaa-ahmed" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
                         <FaGithub />
                     </a>
                     <a href="https://twitter.com/SadiaAhmed1999" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition">

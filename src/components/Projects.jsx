@@ -69,7 +69,7 @@ const Projects = () => {
             </div>
 
             <motion.a 
-                href="https://github.com/sadiaahmed114"
+                href="https://github.com/sadiaa-ahmed"
                 className="mt-14 bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition duration-300 relative z-10"
                 whileHover={{ scale: 1.1 }}
             >

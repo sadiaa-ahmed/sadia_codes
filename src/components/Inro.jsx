@@ -29,7 +29,8 @@ const About = () => {
                 viewport={{ once: false, amount: 0.3 }}
                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.6 }}
             >
-                I am a dedicated <span className="text-blue-400 font-semibold">Full-Stack Developer</span> with a passion for crafting intuitive, high-performance digital solutions. With a strong foundation in front-end technologies, I specialize in creating seamless user experiences, while continuously expanding my expertise in back-end development to build scalable, efficient applications. My approach combines problem-solving, innovation, and attention to detail, ensuring every project is optimized for performance and functionality. Driven by a relentless pursuit of knowledge, I stay ahead of industry trends, mastering the latest technologies to deliver cutting-edge solutions. Whether it’s developing dynamic web applications or optimizing existing systems, I am committed to turning ideas into impactful digital experiences 🚀.
+                As a passionate <span className="text-blue-400 font-semibold">Full-Stack Developer</span>, she loves creating innovative solutions and turning ideas into real code. With strong skills in various programming languages and development methods, she focuses on building efficient, scalable, and user-friendly applications. She pays close attention to detail and follows best practices for clean and secure coding. She enjoys solving complex problems and always looks for ways to improve her skills. Whether working on team projects or contributing to open-source, she is excited to learn, grow, and make a positive impact in the tech community.
+                {/* I am a dedicated <span className="text-blue-400 font-semibold">Full-Stack Developer</span> with a passion for crafting intuitive, high-performance digital solutions. With a strong foundation in front-end technologies, I specialize in creating seamless user experiences, while continuously expanding my expertise in back-end development to build scalable, efficient applications. My approach combines problem-solving, innovation, and attention to detail, ensuring every project is optimized for performance and functionality. Driven by a relentless pursuit of knowledge, I stay ahead of industry trends, mastering the latest technologies to deliver cutting-edge solutions. Whether it’s developing dynamic web applications or optimizing existing systems, I am committed to turning ideas into impactful digital experiences 🚀. */}
             </motion.p>
 
             <motion.div
@@ -46,7 +47,7 @@ const About = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
                 <motion.a 
-                    href="https://github.com/sadiaahmed114" 
+                    href="https://github.com/sadiaa-ahmed" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="px-5 sm:px-6 py-2 sm:py-3 bg-yellow-500 text-black font-bold rounded-full shadow-md hover:bg-yellow-400 transition-all text-sm sm:text-base"
@@ -59,7 +60,7 @@ const About = () => {
                 </motion.a>
 
                 <motion.a 
-                    href="https://www.linkedin.com/in/sadiaahmed14" 
+                    href="https://www.linkedin.com/in/sadiaa-ahmed" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="px-5 sm:px-6 py-2 sm:py-3 bg-orange-500 text-black font-bold rounded-full shadow-md hover:bg-orange-300 transition-all text-sm sm:text-base"
