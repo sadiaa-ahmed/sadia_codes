@@ -44,7 +44,7 @@ const Hero = () => {
                     animate="visible"
                     exit="exit"
                     variants={textVariants}
-                    className="text-5xl font-bold relative overflow-visible whitespace-normal border-r-4 border-white pr-2"
+                    className="text-4xl font-bold relative overflow-visible whitespace-normal border-r-4 border-white pr-2"
                 >
                     {textArray[index]}
                 </motion.h1>
@@ -67,7 +67,7 @@ const Hero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" }}
-                    className="text-white"
+                    className="text-white m-4"
                 >
                     "Dream, Code, Build, Repeat. 
                 </motion.span>

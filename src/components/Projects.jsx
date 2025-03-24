@@ -40,7 +40,7 @@ const Projects = () => {
             ></motion.div>
 
             <motion.h1 
-                className="text-5xl font-bold mb-10 text-yellow-400 relative z-10"
+                className="text-4xl font-bold mb-10 text-yellow-400 relative z-10"
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
